@@ -38,13 +38,15 @@
 }
 
 .matriz{
-    padding-left: 5px;
-    padding-right: 5px;
-
+    padding-left: 10px;
+    padding-right: 10px;
     border-right: 1px black solid;
     border-left: 1px black solid;
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+.l1, .l2, .l3{
+    display: flex;
     gap: 1em;
 }
