@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Sistemas Lineares</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Sistemas Lineares</h2>
+        <div class="sistema">
+            <img src="chave.png">
+            <div class="sisteman">   
+                <form action="">
+                    <div class="linha1">
+                        <input type="text" placeholder="A" id="a" name="a"> X +
+                        <input type="text" placeholder="B" id="b" name="b"> Y + 
+                        <input type="text" placeholder="C" id="c" name="c"> Z =
+                        <input type="text" id="r1" name="r1">
+                    </div>
+                    <div class="linha2">
+                        <input type="text" placeholder="D" id="d" name="d"> X +
+                        <input type="text" placeholder="E" id="e" name="e"> Y + 
+                        <input type="text" placeholder="F" id="f" name="f"> Z =
+                        <input type="text" id="r2" name="r2">
+                    </div>
+                    <div class="linha3">
+                        <input type="text" placeholder="G" id="g" name="g"> X +
+                        <input type="text" placeholder="H" id="h" name="h"> Y + 
+                        <input type="text" placeholder="I" id="i" name="i"> Z =
+                        <input type="text" id="r3" name="r3">
+                    </div>
+                    <input type="button" value="Calcular" id="calcularBtn">
+                </form>
+            </div>
+        </div>
+
+        <div class="matriz">
+            <div class="l1">
+            <p id="aa"></p> <p id="ab"></p> <p id="ac"></p> 
+            </div>
+            <div class="l2">
+                <p id="ba"></p> <p id="bb"></p> <p id="bc"></p>
+            </div>
+            <div class="l3">
+            <p id="ca"></p> <p id="cb"></p> <p id="cc"></p> 
+            </div>
+            
+        </div>
+
+        <div class="det">
+            <p id="detA"></p>
+            <p id="detX"></p>
+            <p id="detY"></p>
+            <p id="detZ"></p>
+        </div>
+
+        <div class="resposta">
+            <p id="X"></p>
+            <p id="Y"></p>
+            <p id="Z"></p>
+        </div>
+
+        <div class="classificacao">
+            <p id="tipo"></p>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
